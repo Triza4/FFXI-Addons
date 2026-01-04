@@ -288,13 +288,9 @@ windower.register_event('outgoing chunk', function(id, org, mod, inj, blk)
                 end
 
                 log('using %s.':format(action.name))
-
-                if action.name == 'Sneak' or action.name == 'Invisible' then
-                    cmd('accession')
-                    coroutine.sleep(1.1)
-                end
                 cmd(action.command)
-                return
+
+				return
             end
         end
 
